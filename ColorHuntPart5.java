@@ -11,9 +11,10 @@ import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-class ColorHunt4 extends JFrame {
+class ColorHunt5 extends JFrame {
 
-
+	// List of color buttons
+	JButton[] color_buttons = new JButton[29];
 	private JPanel contentPane;
 
 	/**
@@ -23,7 +24,7 @@ class ColorHunt4 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ColorHunt4 frame = new ColorHunt4();
+					ColorHunt5 frame = new ColorHunt5();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -35,7 +36,7 @@ class ColorHunt4 extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ColorHunt4() {
+	public ColorHunt5() {
 		setTitle("Color Hunt");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 582, 296);
@@ -44,9 +45,6 @@ class ColorHunt4 extends JFrame {
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		// List of color buttons
-		JButton[] color_buttons = new JButton[28];
 		
 		JButton btnExit = new JButton("Exit");
 		btnExit.addActionListener(new ActionListener() {
@@ -68,141 +66,312 @@ class ColorHunt4 extends JFrame {
 		contentPane.add(lblHowtoplay2);
 		
 		color_buttons[1] = new JButton("");
+		color_buttons[1].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[1]);
+			}
+		});
 		color_buttons[1].setBounds(440, 189, 50, 50);
 		contentPane.add(color_buttons[1]);
 		
 		color_buttons[2] = new JButton("");
+		color_buttons[2].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[2]);
+			}
+		});
 		color_buttons[2].setBounds(380, 189, 50, 50);
 		contentPane.add(color_buttons[2]);
 		
 		color_buttons[3] = new JButton("");
+		color_buttons[3].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[3]);
+			}
+		});
 		color_buttons[3].setBounds(320, 189, 50, 50);
 		contentPane.add(color_buttons[3]);
 		
 		color_buttons[4] = new JButton("");
+		color_buttons[4].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[4]);
+			}
+		});
 		color_buttons[4].setBounds(260, 189, 50, 50);
 		contentPane.add(color_buttons[4]);
 		
 		color_buttons[5] = new JButton("");
+		color_buttons[5].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[5]);
+			}
+		});
 		color_buttons[5].setBounds(200, 189, 50, 50);
 		contentPane.add(color_buttons[5]);
 		
 		color_buttons[6] = new JButton("");
+		color_buttons[6].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[6]);
+			}
+		});
 		color_buttons[6].setBounds(140, 189, 50, 50);
 		contentPane.add(color_buttons[6]);
 		
 		color_buttons[7] = new JButton("");
+		color_buttons[7].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[7]);
+			}
+		});
 		color_buttons[7].setBounds(80, 189, 50, 50);
 		contentPane.add(color_buttons[7]);
 		
 		color_buttons[8] = new JButton("");
 		color_buttons[8].addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[8]);
 			}
 		});
 		color_buttons[8].setBounds(20, 189, 50, 50);
 		contentPane.add(color_buttons[8]);
 		
 		color_buttons[9] = new JButton("");
+		color_buttons[9].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[9]);
+			}
+		});
 		color_buttons[9].setBounds(500, 128, 50, 50);
 		contentPane.add(color_buttons[9]);
 		
 		color_buttons[10] = new JButton("");
+		color_buttons[10].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[10]);
+			}
+		});
 		color_buttons[10].setBounds(440, 128, 50, 50);
 		contentPane.add(color_buttons[10]);
 		
 		color_buttons[11] = new JButton("");
+		color_buttons[11].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[11]);
+			}
+		});
 		color_buttons[11].setBounds(380, 128, 50, 50);
 		contentPane.add(color_buttons[11]);
 		
 		color_buttons[12] = new JButton("");
+		color_buttons[12].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[12]);
+			}
+		});
 		color_buttons[12].setBounds(320, 128, 50, 50);
 		contentPane.add(color_buttons[12]);
 		
 		color_buttons[13] = new JButton("");
+		color_buttons[13].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[13]);
+			}
+		});
 		color_buttons[13].setBounds(260, 128, 50, 50);
 		contentPane.add(color_buttons[13]);
 		
 		color_buttons[14] = new JButton("");
+		color_buttons[14].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[14]);
+			}
+		});
 		color_buttons[14].setBounds(200, 128, 50, 50);
 		contentPane.add(color_buttons[14]);
 		
 		color_buttons[15] = new JButton("");
+		color_buttons[15].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[15]);
+			}
+		});
 		color_buttons[15].setBounds(140, 128, 50, 50);
 		contentPane.add(color_buttons[15]);
 		
 		color_buttons[16] = new JButton("");
+		color_buttons[16].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[16]);
+			}
+		});
 		color_buttons[16].setBounds(80, 128, 50, 50);
 		contentPane.add(color_buttons[16]);
 		
 		color_buttons[17] = new JButton("");
+		color_buttons[17].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[17]);
+			}
+		});
 		color_buttons[17].setBounds(20, 128, 50, 50);
 		contentPane.add(color_buttons[17]);
 		
 		color_buttons[18] = new JButton("");
+		color_buttons[18].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[18]);
+			}
+		});
 		color_buttons[18].setBounds(20, 67, 50, 50);
 		contentPane.add(color_buttons[18]);
 		
 		color_buttons[19] = new JButton("");
+		color_buttons[19].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[19]);
+			}
+		});
 		color_buttons[19].setBounds(80, 67, 50, 50);
 		contentPane.add(color_buttons[19]);
 		
 		color_buttons[20] = new JButton("");
+		color_buttons[20].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[20]);
+			}
+		});
 		color_buttons[20].setBounds(140, 67, 50, 50);
 		contentPane.add(color_buttons[20]);
 		
 		color_buttons[21] = new JButton("");
+		color_buttons[21].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[21]);
+			}
+		});
 		color_buttons[21].setBounds(200, 67, 50, 50);
 		contentPane.add(color_buttons[21]);
 		
 		color_buttons[22] = new JButton("");
+		color_buttons[22].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[22]);
+			}
+		});
 		color_buttons[22].setBounds(260, 67, 50, 50);
 		contentPane.add(color_buttons[22]);
 		
 		color_buttons[23] = new JButton("");
+		color_buttons[23].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[23]);
+			}
+		});
 		color_buttons[23].setBounds(320, 67, 50, 50);
 		contentPane.add(color_buttons[23]);
 		
 		color_buttons[24] = new JButton("");
+		color_buttons[24].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[24]);
+			}
+		});
 		color_buttons[24].setBounds(380, 67, 50, 50);
 		contentPane.add(color_buttons[24]);
 		
 		color_buttons[25] = new JButton("");
+		color_buttons[25].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[25]);
+			}
+		});
 		color_buttons[25].setBounds(440, 67, 50, 50);
 		contentPane.add(color_buttons[25]);
 		
 		color_buttons[26] = new JButton("");
+		color_buttons[26].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[26]);
+			}
+		});
 		color_buttons[26].setBounds(500, 67, 50, 50);
 		contentPane.add(color_buttons[26]);
 		
 		color_buttons[27] = new JButton("");
+		color_buttons[27].addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				check_color(color_buttons[27]);
+			}
+		});
 		color_buttons[27].setBounds(500, 189, 50, 50);
 		contentPane.add(color_buttons[27]);
-		
+
+		color_buttons[28] = new JButton("");
+		color_buttons[28].setBounds(230, 10, 50, 50);
+		contentPane.add(color_buttons[28]);
+		color_buttons[28].setEnabled(false);
+
 		JButton btnStart = new JButton("Start Game");
 		btnStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// Start color hunt game
-				color_hunt(color_buttons);
+				color_hunt();
+				// Disable start button
+				btnStart.setEnabled(false);
 			}
 		});
 		btnStart.setBounds(20, 10, 106, 46);
 		contentPane.add(btnStart);
-		
 	}
 	
-	public static void color_hunt(JButton[] color_buttons)
+	public void color_hunt()
 	{
 		// Get and set colors for buttons
-		get_and_set_button_color(color_buttons);
+		get_and_set_button_color();
+	}
+
+	// Checks if the button the user pressed is
+	// the same color as the one they are supposed to press
+	public void check_color(JButton Clicked_button) 
+	{
+		if (Clicked_button.getBackground() == color_buttons[28].getBackground())
+		{
+			get_and_set_button_color();
+		} 
+		else
+		{
+
+		}
+	}
+
+	// Checks if at least one button is the same as the 
+	// colored button the player is supposed to match
+	// if there is not a button with the same color 
+	// get new set of colors
+	public void get_same_color ()
+	{
+		boolean color_exits = false;
+		for (int i = 1; i < 28; i++)
+		{
+			if (color_buttons[i].getBackground() == color_buttons[28].getBackground())
+			{
+				color_exits = true;
+			}
+		}
+		if (color_exits == false)
+		{
+			get_and_set_button_color();
+		}
 	}
 	
-	public static void get_and_set_button_color(JButton[] color_buttons)
+	public void get_and_set_button_color()
 	{
 		// Create instance of Random class
 		Random rand = new Random();
 		
-		for (int i = 1; i < 28; i++) {
+		for (int i = 1; i < 29; i++) {
 			
 			// Hold and gets a number for random color
 			int new_color = rand.nextInt(13);
@@ -261,5 +430,7 @@ class ColorHunt4 extends JFrame {
 				color_buttons[i].setBackground(Color.PINK);
 			}
 		}
+		// Chech if one button is the same color that is supposed to be matched
+		get_same_color();
 	}
 }

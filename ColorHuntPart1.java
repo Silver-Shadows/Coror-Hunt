@@ -10,7 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 
-class Color_Hunt {
+class Color_Hunt1 {
     public static void main(String args[]){
         // Creating the Frame
         JFrame frame = new JFrame("Color Hunt");                // Setting name for JFrame

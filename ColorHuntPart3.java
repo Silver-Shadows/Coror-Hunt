@@ -11,7 +11,7 @@ import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-class Color_Hunt extends JFrame {
+class Color_Hunt3 extends JFrame {
 
 	private JPanel contentPane;
 
@@ -22,7 +22,7 @@ class Color_Hunt extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Color_Hunt frame = new Color_Hunt();
+					Color_Hunt3 frame = new Color_Hunt3();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -34,7 +34,7 @@ class Color_Hunt extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Color_Hunt() {
+	public Color_Hunt3() {
 		setTitle("Color Hunt");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 582, 296);
